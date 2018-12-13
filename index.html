@@ -56,7 +56,7 @@
   h1 {
 	color: #FFFFFF;
 	font-size: 70px;
-	font-family: Druk;
+	font-family: Druk-Heavy;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
@@ -95,7 +95,7 @@
 	font-weight: normal;
 	letter-spacing: 0.6px;
 	line-height: 20px;
-	padding-right: 12px;
+	padding-right: 8px;
   }
 
     .text-color-black p {
@@ -104,8 +104,8 @@
 
   span {
   background-color: #FBDE8C;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 
@@ -117,6 +117,11 @@
     align-content: center;
   }
 
+ .gradient-top-light {
+    background: linear-gradient(-180deg, rgba(91, 190, 182, 1) 0%, rgba(91, 190, 182, 1) 0%, rgba(91, 190, 182, 0) 100%, rgba(216, 216, 216, 0) 100%);
+    height: 303px;
+	width: 720px;
+  }
 
 </style>
   
@@ -230,7 +235,8 @@
       
       </amp-story-grid-layer>
 
-      <amp-story-grid-layer template="vertical">
+
+      <amp-story-grid-layer template="vertical" class="gradient-top-light">
         <div>
         <p>This included the class, inventory, and shipping and storage costs.</p>
         </div>
