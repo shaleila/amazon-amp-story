@@ -54,82 +54,69 @@
 
  /* Cover Title */
   h1 {
-    width: 640px;
-	height: 280px;
 	color: #FFFFFF;
-	font-size: 160px;
+	font-size: 70px;
 	font-family: Druk-Heavy;
 	font-weight: 900;
 	text-transform: uppercase;
-	letter-spacing: 3.2px;
-	line-height: 140px;
+	letter-spacing: 2.8px;
+	line-height: 65px;
 	text-align: left;
   }
  /* Credits Header */ 
   h2 {
-    font-family: Druk, serif;
-    color: #56ee2e;
-    text-transform: uppercase;
-    font-size: 15px;
-    margin: 0 0 5px 0;
-    padding: 0;
+	color: #FFFFFF;
+	font-size: 40px;
+	font-family: Druk-Heavy;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	line-height: 40px;
+	text-align: left;
   }
 /* Highlighted Body Text */
    h3 {
-    font-family: Druk, serif;
-    color: #56ee2e;
-    text-transform: uppercase;
-    font-size: 15px;
-    margin: 0 0 5px 0;
-    padding: 0;
+  	width: 298px;
+	height: 36px;
+	color: #21272C;
+	font-size: 20px;
+	font-family: Graphik-Medium;
+	font-weight: 600;
+	letter-spacing: 0.7px;
+	line-height: 38px;
   }
  /* Regular Body Text */
   p {
     width: 298px;
 	height: 36px;
 	color: #FFFFFF;
-	font-size: 36px;
+	font-size: 17px;
 	font-family: Graphik-Regular;
 	font-weight: normal;
+	letter-spacing: 0.6px;
+	line-height: 20px;
+	padding-right: 12px;
   }
 
     .text-color-black p {
-    color: #333;
+    color: #21272C;
   }
+
+  span {
+  background-color: #FBDE8C;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 
 
   strong {
     color: #56ee2e;
   }
-  
-  amp-story-grid-layer.bottom {
-    align-content: end;
-  }
-  
+
   amp-story-grid-layer.center {
     align-content: center;
   }
 
-.gradient-top--light {
-    background: linear-gradient(to top, transparent, transparent 50%, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0.5))
-  }
-
-.gradient--top {
-    background: linear-gradient(to top, transparent, transparent 50%, rgba(0,0,0,0.1) 60%, #000);
-  }
-  
-.gradient-top--dark {
-    background: linear-gradient(to top, transparent, transparent 50%, rgba(0,0,0,0.2) 60%, #000);
-  }
-  
-  
-.gradient--bottom {
-    background: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.5) 60%, #000);
-  }
-  
-.gradient-bottom--light {
-    background: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.1) 60%, #000);
-  }
 
 </style>
   
@@ -143,16 +130,15 @@
      
       <amp-story-grid-layer template="fill">
         
-        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/cover_gold_bills.png" alt="Cover" layout="responsive" width="100" height="100"></amp-img>
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/cover.png" alt="Cover" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical">
         
-        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/logo_black.png" alt="The Atlantic Logo" width="180px" height="59px" ></amp-img>
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/logo_white.png" alt="The Atlantic Logo" width="90px" height="30px" ></amp-img>
 
         <h1>AMAZON GOLD RUSH</h1>
-         
         <p>By Andrew McGill</p>
 
 
@@ -170,7 +156,7 @@
       
       </amp-story-grid-layer>
 
-      <amp-story-grid-layer template="vertical" class="gradient-top--light">
+      <amp-story-grid-layer template="vertical">
         
         <p>Struggling to pay rent in New York City, stuck at jobs they disliked, Jordan McDowell and William Bjork wanted a way out.</p>
 
@@ -188,10 +174,10 @@
       
       </amp-story-grid-layer>
 
-      <amp-story-grid-layer template="vertical" class="black-text-white-gradient-top">
-        
+      <amp-story-grid-layer template="vertical" class="gradient-top--light">
+        <div>
         <p>They found a YouTube tutorial featuring Matt Behdjou and Mike Gazzola, normal guys who promised they could teach anyone to make thousands of dollars selling goods on Amazon.</p>
-
+        </div>
       </amp-story-grid-layer>
     
     </amp-story-page>
@@ -205,6 +191,12 @@
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/pitch.png" alt="Pitch" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical">
+        <div>
+        <p>The pair would explain everything: How to source and ship a product from China, how to list it for an attractive markup on Amazon, and how to get customers to leave good reviews.</p>
+        </div>
+      </amp-story-grid-layer>
     
     </amp-story-page>
 
@@ -216,6 +208,14 @@
         
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/bait.png" alt="Bait" layout="responsive" width="100" height="100"></amp-img>
       
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical" class="text-color-black">
+        
+        <p>All McDowell and Bjork had to do was pay $3,999 for a course.</p>
+
+        <h3><span>They ended up spending $35,000.</span></h3>
+
       </amp-story-grid-layer>
     
     </amp-story-page>
@@ -229,6 +229,12 @@
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/escape.png" alt="Escape" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical">
+        <div>
+        <p>This included the class, inventory, and shipping and storage costs.</p>
+        </div>
+      </amp-story-grid-layer>
     
     </amp-story-page>
 
@@ -240,6 +246,12 @@
         
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/astray.png" alt="Astray" layout="responsive" width="100" height="100"></amp-img>
       
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical" class="text-color-black">
+        
+        <p>They’re convinced they were led astray by Behdjou and Gazzola, and they’re not alone.</p>
+
       </amp-story-grid-layer>
     
     </amp-story-page>
@@ -253,6 +265,15 @@
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/amazon.png" alt="Amazon" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
+
+
+      <amp-story-grid-layer template="vertical" class="text-color-black">
+        
+        <p>Amazon is now the world’s shopping site.</p>
+
+        <h3><span>But more than half of what it sells comes from third parties, not Amazon itself.</span></h3>
+
+      </amp-story-grid-layer>
     
     </amp-story-page>
 
@@ -265,351 +286,143 @@
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/anything.png" alt="Anything" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
-    
-    </amp-story-page>
 
-
-
-    <amp-story-page id="10-gold">
-     
-      <amp-story-grid-layer template="fill">
+      <amp-story-grid-layer template="vertical" class="text-color-black">
         
-        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/cover_gold_bills.png" alt="Gold" layout="responsive" width="100" height="100"></amp-img>
-      
+        <p>For a fee, Amazon will let individuals sell pretty much anything.</p>
+
       </amp-story-grid-layer>
     
     </amp-story-page>
 
 
 
-    <amp-story-page id="11-bills">
+    <amp-story-page id="10-shipping">
      
       <amp-story-grid-layer template="fill">
         
-        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/cover_gold_bills.png" alt="Bills" layout="responsive" width="100" height="100"></amp-img>
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/anything.png" alt="Anything" layout="responsive" width="100" height="100"></amp-img>
       
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/grain.png" alt="Anything" layout="responsive" width="100" height="100"></amp-img>
+      
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical" class="center">
+        
+        <p>They’ll handle the shipping and storage — and overseas manufacturers are happy to supply cheap goods, if paid in advance.</p>
+
       </amp-story-grid-layer>
     
     </amp-story-page>
 
 
 
-    <amp-story-page id="12-complaint">
+    <amp-story-page id="11-gold">
+     
+      <amp-story-grid-layer template="fill">
+        
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/gold_bills.png" alt="Gold" layout="responsive" width="100" height="100"></amp-img>
+      
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical">
+        
+        <p>Some sellers have struck gold selling phone cases and cheap clothes.</p>
+
+      </amp-story-grid-layer>
+    
+    </amp-story-page>
+
+
+
+    <amp-story-page id="12-bills">
+     
+      <amp-story-grid-layer template="fill">
+        
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/gold_bills.png" alt="Bills" layout="responsive" width="100" height="100"></amp-img>
+      
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="fill">
+        
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/grain.png" alt="Anything" layout="responsive" width="100" height="100"></amp-img>
+      
+      </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical" class="center">
+        
+        <p>Many have not, stuck with mounting bills. The real winners are the e-commerce experts, who offer advice on Amazon and charge thousands of dollars for their courses.</p>
+
+      </amp-story-grid-layer>
+    
+    </amp-story-page>
+
+
+
+    <amp-story-page id="13-complaint">
      
       <amp-story-grid-layer template="fill">
         
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/complaint.png" alt="Complaint" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical">
+        
+        <p>In 2018, nearly 50 people filed complaints with the Federal Trade Commission, saying these experts lied to them about how much money they could make selling on Amazon. Half of the victims lost more than $35,000.</p>
+
+      </amp-story-grid-layer>
     
     </amp-story-page>
 
 
 
-    <amp-story-page id="13-america">
+    <amp-story-page id="14-america">
      
       <amp-story-grid-layer template="fill">
         
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/america_credits.png" alt="America" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
+
+      <amp-story-grid-layer template="vertical" class="text-color-black">
+        
+        <p>Despite that, Behdjou and Gazzola have no shortage of customers. After all, there’s something uniquely American about believing that, with a little bit of hard work, anybody can make money fast.</p>
+
+      </amp-story-grid-layer>
     
     </amp-story-page>
 
 
 
-    <amp-story-page id="14-credits">
+    <amp-story-page id="15-credits">
      
       <amp-story-grid-layer template="fill">
         
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/america_credits.png" alt="Credits" layout="responsive" width="100" height="100"></amp-img>
       
       </amp-story-grid-layer>
-    
-    </amp-story-page>
 
-
-
-
-
-
-
-
-<!--
-
-    <amp-story-page id="cover">
       <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/1_background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-
+        
+        <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/grain.png" alt="Anything" layout="responsive" width="100" height="100"></amp-img>
       
-    </amp-story-page>
-
-
-
-    <amp-story-page id="intro-2">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/2_background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
       </amp-story-grid-layer>
-      
-      <amp-story-grid-layer template="vertical">
-        <p>Martin Luther King Jr. was assassinated in Memphis, but his death reverberated across the United States.</p>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="intro-3">
-    
-    <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-    </amp-story-grid-layer>
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/intro_1.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100" class="transparent"></amp-img>
-      </amp-story-grid-layer>
-      
+
       <amp-story-grid-layer template="vertical" class="center">
-        <p><strong>Memphis</strong> did not feel the full flames of riots in April 1968, in part because of King's organizing appa­ratus. But his message of nonviolence was not enough to hold back the tide of rage that brought millions of dollars of damage to other major metropolises, including <strong>Chicago</strong> and <strong>Baltimore.</strong></p>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="intro-4">
-      <amp-story-grid-layer template="fill">
-        <amp-video autoplay src="https://cdn.theatlantic.com/assets/media/video/upload/LaToya-GoPro-Lead-optimized.mp4" alt="LaToya Ruby Frazier shooting photographs from a helicopter." layout="responsive" width="100" height="100" loop poster="./assets/lrf-video-poster.png"></amp-video>
-      </amp-story-grid-layer>
-      
-      <amp-story-grid-layer template="vertical" class="gradient-top--dark">
-        <p>Using techniques and film formats associated with late-20th-century documentary photography, and shooting from a helicopter, <strong>LaToya Ruby Frazier</strong> revisited Memphis, Chicago, and Baltimore to explore how they have responded to five more decades of oppression.</p>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="memphis-1">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/memphis-background.gif" alt="Memphis title card background" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-    </amp-story-page>    
-    
-    <amp-story-page id="memphis-2">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" class="borderless">
-        <amp-img src="./assets/Memphis1.jpg" alt="The Lorraine Hotel, view from street" layout="responsive" width="100" height="75"></amp-img>
-      </amp-story-grid-layer>
-      
-      <amp-story-grid-layer template="vertical" class="bottom">
-        <div>
-          <h2>Memphis</h2>
-          <p>The Lorraine Hotel, where King was assassinated, has since been reinvisioned as the National Civil Rights Museum, which preserves many of the exact details from the day of the murder. A <strong>Dodge and a Cadillac</strong> are parked in the lot below room 306; a white wreath on the railing honors the room's most famous occupant.</p>
-        </div>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="memphis-3">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical">
-        <div>
-          <h2>Memphis</h2>
-          <p>The assassin James Earl Ray shot King, who was standing on the balcony from a flophouse bathroom across the street.</p>
-        </div>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" class="borderless bottom">
-        <amp-img src="./assets/Memphis2.jpg" alt="The Lorraine Hotel, view from above" layout="responsive" width="100" height="75"></amp-img>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="memphis-4">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical">
-        <div>
-          <h2>Memphis</h2>
-          <p>The <strong>Memphis Pyramid,</strong> one of Tennessee's most famous buildings, overlooks the <strong>Hernando DeSoto Bridge</strong> across the Mississippi River. Black Lives Matter protesters shut down the bridge in 2016, echoing sanitation workers' demands in 1968 for economic justice and calling for an end to police brutality.</p>
-        </div>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" class="borderless bottom">
-        <amp-img src="./assets/Memphis3.jpg" alt="The Lorraine Hotel, view from above" layout="responsive" width="100" height="75"></amp-img>
-      </amp-story-grid-layer>
-    </amp-story-page>
 
-    <amp-story-page id="chicago-1">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/chicago-intro.gif" alt="Chicago title card background" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-    </amp-story-page>
+      	<h2>CREDITS</h2>
+        
+        <p>Writer: Andrew McGill </br></br> Editor: Ellen Cushing </br></br> Illustrator: Eric Chow </br></br> Art Director: Emily Jan </br></br> Designer: Angela He </br></br> Developer: Shaleila Louis
+</p>
 
-    <amp-story-page id="chicago-2">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/Chicago2.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
       </amp-story-grid-layer>
-      
-      <amp-story-grid-layer template="vertical" class="gradient-top--dark">
-        <div>
-          <h2>Chicago</h2>
-          <p>The structural inequality of Chicago is striking even today. Just west of the Magnificent Mile marks the location where the <strong>Cabrini-Green public-housing projects</strong> once stood.</p>
-        </div>
-      </amp-story-grid-layer>
-    </amp-story-page>
     
-    <amp-story-page id="chicago-3">
-    <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-    </amp-story-grid-layer>
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/Chicago2.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100" class="transparent"></amp-img>
-      </amp-story-grid-layer>
-      
-      <amp-story-grid-layer template="vertical" class="center">
-        <p>It is currently being redeveloped. But in 1968, rage gripped the ghetto, and snipers reportedly fired on police from the towers.</p>
-      </amp-story-grid-layer>
     </amp-story-page>
-    
-    <amp-story-page id="chicago-4">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/Chicago5.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-      
-      <amp-story-grid-layer template="vertical" class="bottom gradient--bottom">
-        <div>
-          <h2>Chicago</h2>
-          <p>In 1968, King led sustained demonstrations against housing discrimination around the city. During a march into the Gage Park neighborhood, protestors were met by white counterprotesters, who pelted King with rocks.</p>
-        </div>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="chicago-5">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="75"></amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical">
-        <div>
-          <h2>Chicago</h2>
-          <p>The <strong>Martin Luther King Jr. Living Memorial,</strong> commemorating the incident, was unveiled in Marquette Park in 2016.</p>
-        </div>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" class="borderless-sides bottom">
-        <amp-img src="./assets/Chicago6.jpg" alt="CVS drugstore" layout="responsive" width="100" height="98"></amp-img>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    
-    <amp-story-page id="baltimore-1">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/baltimore-intro.gif" alt="Baltimore title card background" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    
-    <amp-story-page id="baltimore-2">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="./assets/Baltimore1.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" class="gradient-top--light">
-        <div>
-          <h2>Baltimore</h2>
-          <p>The 2015 Baltimore Uprising saw the city's most extensive protests since 1968's Holy Week Uprising.</p>
-        </div>
-      </amp-story-grid-layer>
-    </amp-story-page>
-  
-  <amp-story-page id="baltimore-3">
-   <amp-story-grid-layer template="fill">
-     <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-   </amp-story-grid-layer>
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/Baltimore1.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100" class="transparent"></amp-img>
-     </amp-story-grid-layer>
-     
-     <amp-story-grid-layer template="vertical" class="center">
-       <p>In 1968, the disturbances started on Gay Street, where a crowd of people had gathered. After the windows of a hat shop were smashed, fires and looting broke out.</p>
-     </amp-story-grid-layer>
-   </amp-story-page>
-   
-   <amp-story-page id="baltimore-4">
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical">
-       <div>
-         <h2>Baltimore</h2>
-         <p>The <strong>CVS drugstore</strong> at the corner of North and Pennsylvania Avenues was burned during the 2015 unrest.</p>
-       </div>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical" class="borderless-sides bottom">
-       <amp-img src="./assets/Baltimore2.jpg" alt="CVS drugstore" layout="responsive" width="100" height="86"></amp-img>
-     </amp-story-grid-layer>
-   </amp-story-page>
-   
-   <amp-story-page id="baltimore-5">
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical" class="borderless">
-       <amp-img src="./assets/Baltimore3.jpg" alt="Mural at Gilmor Homes" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical" class="bottom">
-       <div>
-         <h2>Baltimore</h2>
-         <p>On April 19, 2015, Freddie Gray, 25, died from an injury suffered in police custody, sparking protests throughout the city. Murals in his honor were painted near the Gilmor Homes, the public housing project where he had been arrested.</p>
-       </div>
-     </amp-story-grid-layer>
-   </amp-story-page>
-   
-   <amp-story-page id="baltimore-7">
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/Baltimore4.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-
-     <amp-story-grid-layer template="vertical" class="gradient-top--light">
-       <div>
-         <h2>Baltimore</h2>
-         <p>Disturbances occurred throughout the Sandtown-Winchester neighborhood.</p>
-       </div>
-     </amp-story-grid-layer>
-   </amp-story-page>
-   
-   <amp-story-page id="baltimore-8">
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/Baltimore5.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical" class="bottom gradient-bottom--light">
-       <div>
-         <h2>Baltimore</h2>
-         <p>The despair of 1968 left an indelible mark on Baltimore's history. As in Chicago, unrest in Baltimore's black neighborhoods cemented white flight to the suburbs and other parts of the city.</p>
-       </div>
-     </amp-story-grid-layer>
-   </amp-story-page>
-   
-   <amp-story-page id="baltimore-9" class="center">
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical" class="borderless-sides">
-       <amp-img src="./assets/Baltimore6.jpg" alt="Houses from ground view" layout="responsive" width="100" height="81"></amp-img>
-       <div class="padding-sides">
-         <h2>Baltimore</h2>
-         <p>The divestment and discriminatory lending practices—infamously associated with Baltimore—increased the segregation and deterioration of black neighborhoods, like the one where Freddie "Pepper" Gray grew up in poverty.</p>
-       </div>
-     </amp-story-grid-layer>
-   </amp-story-page>
-   
-   <amp-story-page id="ending">
-     <amp-story-grid-layer template="fill">
-       <amp-img src="./assets/background.jpg" alt="Background image, nothing to see here" layout="responsive" width="100" height="100"></amp-img>
-     </amp-story-grid-layer>
-     <amp-story-grid-layer template="vertical" class="borderless-sides center">
-     <div class="padding-sides">
-       <p><strong>LaToya Ruby Frazier</strong> is an artist whose work in photography, video, and performance builds visual archives that address industrialism, Rust Belt revitalization, environmental justice, health-care equity, family, and communal history. She was awarded a MacArthur Fellowship in 2015.</p>
-     </div>
-       <amp-img src="./assets/OutRo1.jpg" alt="LaToya in a helicopter" layout="responsive" width="100" height="80"></amp-img>
-     </amp-story-grid-layer>
-   </amp-story-page>
- </amp-story>
--->
-
-
-
-
 
 
 <!--
