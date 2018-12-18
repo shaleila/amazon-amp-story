@@ -100,7 +100,7 @@
 	margin-bottom: 30px;
   }
 
-    .text-color-black p {
+  .text-color-black p {
     color: #21272C;
   }
 
@@ -110,19 +110,22 @@
   padding-bottom: 6px;
 }
 
-
-  strong {
-    color: #56ee2e;
-  }
-
   amp-story-grid-layer.center {
     align-content: center;
   }
 
- .gradient-top-light {
+  amp-story-grid-layer.top {
+    align-content: flex-start;
+  }
+
+  .gradient-top-light {
     background: linear-gradient(-180deg, rgba(91, 190, 182, 1) 0%, rgba(91, 190, 182, 1) 0%, rgba(91, 190, 182, 0) 100%, rgba(216, 216, 216, 0) 100%);
     height: 303px;
 	width: 720px;
+  }
+
+  #first {
+  	margin-bottom: 0px;
   }
 
 </style>
@@ -141,12 +144,13 @@
       
       </amp-story-grid-layer>
 
-      <amp-story-grid-layer template="vertical">
+      <amp-story-grid-layer template="vertical" class="top">
         
         <amp-img src="https://raw.githubusercontent.com/shaleila/amazon-amp-story/master/assets/logo_white.png" alt="The Atlantic Logo" width="90px" height="30px" ></amp-img>
 
-        <h1>AMAZON GOLD RUSH</h1>
-        <p>By Andrew McGill</p>
+        <div id="first" animate-in="rotate-in-left"> <h1>AMAZON GOLD RUSH</h1> </div>
+        <div id="second" animate-in="fly-in-right"
+        animate-in-after="first"> <p>By Andrew McGill</p> </div>
 
 
       </amp-story-grid-layer>
@@ -165,7 +169,7 @@
 
       <amp-story-grid-layer template="vertical">
         
-        <p>Struggling to pay rent in New York City, stuck at jobs they disliked, Jordan McDowell and William Bjork wanted a way out.</p>
+        <p animate-in="fly-in-right">Struggling to pay rent in New York City, stuck at jobs they disliked, Jordan McDowell and William Bjork wanted a way out.</p>
 
       </amp-story-grid-layer>
     
@@ -183,7 +187,7 @@
 
       <amp-story-grid-layer template="vertical" class="gradient-top--light">
         <div>
-        <p>They found a YouTube tutorial featuring Matt Behdjou and Mike Gazzola, normal guys who promised they could teach anyone to make thousands of dollars selling goods on Amazon.</p>
+        <p animate-in="fly-in-right">They found a YouTube tutorial featuring Matt Behdjou and Mike Gazzola, normal guys who promised they could teach anyone to make thousands of dollars selling goods on Amazon.</p>
         </div>
       </amp-story-grid-layer>
     
@@ -201,7 +205,7 @@
 
       <amp-story-grid-layer template="vertical">
         <div>
-        <p>The pair would explain everything: How to source and ship a product from China, how to list it for an attractive markup on Amazon, and how to get customers to leave good reviews.</p>
+        <p animate-in="fade-in">The pair would explain everything: How to source and ship a product from China, how to list it for an attractive markup on Amazon, and how to get customers to leave good reviews.</p>
         </div>
       </amp-story-grid-layer>
     
